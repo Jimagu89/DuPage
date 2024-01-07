@@ -35,6 +35,70 @@ const formattedSecondLastWednesday = formatDateString(secondLastWednesday);
 // Update the HTML element with the calculated last Wednesdays from the future date
 document.getElementById('lastWednesdaysFromFutureDisplay').textContent = `${formattedLastWednesday}, ${formattedSecondLastWednesday}`;
 
+const approvedScDates = [
+    "01/03/24",
+    "01/10/24",
+    "02/07/24",
+    "02/14/24",
+    "03/06/24",
+    "03/13/24",
+    "04/03/24",
+    "04/10/24",
+    "05/01/24",
+    "05/08/24",
+    "06/05/24",
+    "06/12/24",
+    "07/03/24",
+    "07/10/24",
+    "08/07/24",
+    "08/14/24",
+    "09/04/24",
+    "09/11/24",
+    "10/02/24",
+    "10/09/24",
+    "11/06/24",
+    "11/13/24",
+    "12/04/24",
+    "12/11/24"
+];
+const ulElement = document.getElementById('approvedScDatesList');
+for (const date of approvedScDates) {
+    const liElement = document.createElement('li');
+    liElement.textContent = date;
+
+    ulElement.appendChild(liElement);
+}
 
 
+const approvedArDates = [
+    "01/17/24",
+    "01/24/24",
+    "02/21/24",
+    "02/28/24",
+    "03/20/24",
+    "04/17/24",
+    "04/24/24",
+    "05/15/24",
+    "05/22/24",
+    "06/26/24",
+    "07/17/24",
+    "07/24/24",
+    "08/21/24",
+    "08/28/24",
+    "09/18/24",
+    "09/25/24",
+    "10/16/24",
+    "10/23/24",
+    "11/20/24",
+    "11/27/24",
+    "12/18/24"
+];
+
+const ulElementTwo = document.getElementById('approvedArDatesList');
+for (const date of approvedArDates) {
+    const liElement = document.createElement('li');
+    liElement.textContent = date;
+
+    ulElementTwo.appendChild(liElement);
+}
 
